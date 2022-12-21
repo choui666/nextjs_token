@@ -1,6 +1,6 @@
 import { sendCallInvitation } from "../../lib/fireBase";
 
-export default async function CallInvite(req, resp) {
+export default async function sendCallInvitation(req, resp) {
   await commonFilter(req, resp);
   const userID = req.body.targetUserID;
   if (!userID) {

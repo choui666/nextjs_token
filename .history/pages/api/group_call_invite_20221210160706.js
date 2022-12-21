@@ -1,6 +1,6 @@
 import { sendGroupCallInvitation } from "../../lib/fireBase";
 
-export default async function groupCallInvite(req, resp) {
+export default async function sendGroupCallInvitation(req, resp) {
   await commonFilter(req, resp);
   const userIDList = req.body.targetUserIDList;
   if (userIDList.length == 0) {

@@ -1,7 +1,7 @@
 import { storeFcmToken } from "../../lib/fireBase";
 import commonFilter from "../../lib/filter";
 
-export default async function getStoreFcmToken(req, resp) {
+export default async function storeFcmToken(req, resp) {
   await commonFilter(req, resp);
 
   const userID = req.body.userID;

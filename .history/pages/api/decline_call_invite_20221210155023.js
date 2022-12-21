@@ -1,6 +1,6 @@
 import { declineCallInvitation } from "../../lib/fireBase";
 
-export default async function declineCallInvite(req, resp) {
+export default async function declineCallInvitation(req, resp) {
   await commonFilter(req, resp);
   const userID = req.body.targetUserID;
   const roomID = req.body.roomID;
