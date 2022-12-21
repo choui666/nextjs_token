@@ -19,9 +19,9 @@ export default async function generateAccessToken(req, resp) {
   }
 
   const roomID = req.query.roomID;
-  // if (!roomID) {
-  //   return resp.status(500).json({ error: "roomID  is required" });
-  // }
+  if (!roomID) {
+    return resp.status(500).json({ error: "roomID  is required" });
+  }
 
   let userName = req.query.userName;
   if (!userName) {
